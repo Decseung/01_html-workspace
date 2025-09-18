@@ -210,5 +210,80 @@
     <input type="submit">
     <input type="reset">
   </form>
+  <br/>
+  <hr/>
+
+  <form action="server/test.do">
+
+    <fieldset>
+      <legend>라디오 버튼</legend>
+      성별:
+      <input type="radio" value="선택안함" name="gender" id="no" checked/>
+      <label for="no">선택안함</label>
+      <input id="genderM" type="radio" value="남자" name="gender">
+      <label for="genderM">남자</label>
+      <input id="genderF" type="radio" value="여자" name="gender">
+      <label for="genderF">여자</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>체크박스</legend>
+      취미:
+      <input type="checkbox" id="reading" name="hobby" value="reading">
+      <label for="reading">독서</label>
+
+      <input type="checkbox" id="sports" name="hobby" value="sports">
+      <label for="sports">운동</label>
+
+      <input type="checkbox" id="movie" name="hobby" value="movie">
+      <label for="movie">영화</label>
+
+    </fieldset>
+
+    <input type="submit"/>
+    <input type="reset"/>
+
+  </form>
+
+
+  <br/>
+  <hr/>
+  
+  <form>
+
+    <fieldset>
+      <legend>일반 목록 상자</legend>
+      국가번호:
+      <select name="coutryNo">
+        <option value="false">선택하세요</option>
+        <option value="01">가나 +01</option>
+        <option value="02">가봉 +02</option>
+        <option value="82">한국 +82</option>
+        <option value="99">알본 +99</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>콤보상자</legend>
+      이메일:
+      <input type="text" size="10"/>@
+      <input type="text" list="domainlist">
+      <datalist id="domainlist">
+        <option>naver.com</option>
+        <option>kakao.com</option>
+        <option>gmail.com</option>
+      </datalist>
+    </fieldset>
+    <input type="submit">
+
+  </form>
+
+  <h2>기타 Input</h2>
+  <form action="server/test.do">
+    색상: <input type="color"><br/>
+    첩부파일: <input type="file"><br/>
+    숨긴정보 : <input type="hidden"/>
+  </form>
+
 </body>
 </html>
